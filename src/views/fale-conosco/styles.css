@@ -1,0 +1,146 @@
+body {
+  background-image: url("../../../assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 30px 30px 30px;
+  gap: 30px;
+  font-family: Segoe UI;
+}
+
+.textos-fale-conosco {
+  margin-bottom: 10px;
+
+  h2 {
+    color: #75acf2;
+    font-weight: lighter;
+    font-size: 45px;
+    color: white;
+    text-shadow: -1px -1px 0 #75acf2, 1px -1px 0 #75acf2, -1px 1px 0 #75acf2,
+      1px 1px 0 #75acf2;
+  }
+
+  p {
+    font-size: 16px;
+    color: #000200;
+  }
+}
+
+.fundo-azul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #75acf2;
+  border-radius: 20px;
+  box-shadow: 10px;
+  padding: 10px;
+
+  .input-1 {
+    width: 50%;
+    border-radius: 50px;
+    border: 1px solid gray;
+    padding: 10px;
+  }
+
+  .input-2 {
+    width: 50%;
+    border-radius: 50px;
+    border: 1px solid gray;
+    padding: 10px;
+  }
+
+  textarea {
+    border-radius: 30px;
+    border: 1px solid gray;
+    padding-left: 15px;
+    padding-top: 15px;
+    max-height: 180px;
+    max-width: 400px;
+    min-height: 180px;
+    min-width: 80%;
+    resize: none;
+  }
+}
+
+/* ------------------- */
+
+.contato-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  font-weight: 50px;
+}
+
+.contact-title {
+  color: #75acf2;
+  font-weight: lighter;
+  font-size: 45px;
+  color: white;
+  text-shadow: -1px -1px 0 #75acf2, 1px -1px 0 #75acf2, -1px 1px 0 #75acf2,
+    1px 1px 0 #75acf2;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  background-color: #75acf2;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+
+  .contact-info-texts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .textos-fale-conosco {
+    margin-bottom: 10px;
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .contact-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .fundo-azul {
+    .input-1 {
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .input-2 {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+
+  textarea {
+    min-width: 90%;
+  }
+
+  .contact-info {
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      text-align: center;
+    }
+  }
+}
