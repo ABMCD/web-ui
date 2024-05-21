@@ -60,6 +60,7 @@ header {
 }
 
 .button-doe-agora {
+  text-decoration: none;
   background-color: #01aef2;
   color: white;
   font-weight: bold;

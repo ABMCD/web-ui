@@ -65,6 +65,8 @@ main {
   }
 
   .button-fale-conosco {
+    font-family: sans-serif;
+    text-decoration: none;
     background-color: #01aef2;
     color: white;
     font-weight: bold;
