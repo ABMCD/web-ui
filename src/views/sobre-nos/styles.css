@@ -1,0 +1,86 @@
+body {
+  background-image: url("../../../assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* Área azul */
+.area-azul {
+  background-color: #75acf2;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  width: 45%;
+  margin: 20px;
+}
+
+.forms h2 {
+  color: white;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.forms p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Imagens lado a lado */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  width: 50%;
+  margin: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Botão de Doação */
+.doe-agora {
+  background-color: #00bfff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.doe-agora:hover {
+  background-color: #019dcf;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .area-azul, .image-grid {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .logo-texts {
+    padding-left: 0;
+  }
+
+  .doe-agora {
+    margin: 20px 0;
+  }
+}
