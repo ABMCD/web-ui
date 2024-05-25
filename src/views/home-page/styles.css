@@ -1,0 +1,32 @@
+body {
+  background-image: url("../../../assets/background-normal.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  
+  h2 {
+    margin-top: 8%;
+    padding-left: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    width: 40%;
+    text-align: justify;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    h2 {
+      width: 80%;
+    }
+  }
+}
